@@ -120,6 +120,11 @@ body.dark-mode {
   color: white;
   
 }
+.letter.light {
+
+  color: #333333;
+}
+
 
 #correct {
   background-color: #528d4e;

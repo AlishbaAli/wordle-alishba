@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../App";
 
 const Letter = ({ letterPos, attemptVal }) => {
-  //const letter = board[attemptVal][letterPos];
+  const { board, isDarkMode } = useContext(AppContext);
+  const letter = board[attemptVal][letterPos];
 
-  return <div className={`letter`}> letter</div>;
+  return <div className={`letter ${!isDarkMode ? "light" : ""}`}>{letter}</div>;
 };
 
 export default Letter;

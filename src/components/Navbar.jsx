@@ -1,11 +1,11 @@
-import { useState } from "react";
 import "../App.css";
+import { useContext } from "react";
+import { AppContext } from "../App";
 
 const NavBar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { toggleTheme, isDarkMode } = useContext(AppContext);
   const toggle = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.className = isDarkMode ? "light-mode" : "dark-mode";
+    toggleTheme();
   };
   return (
     <div className={`nav-container ${isDarkMode ? "dark" : "light"}`}>
