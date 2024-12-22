@@ -9,6 +9,7 @@ body {
 
   font-family:'Roboto';
   overflow: hidden;
+ 
 }
 body.light-mode {
   background-color: #ffffff;
@@ -94,30 +95,31 @@ body.dark-mode {
 }
 
 .board {
+
   width: 450px;
-  height: 550px;
-  border: 1px solid black;
+  height: 300px;
   display: flex;
   flex-direction: column;
 }
 
 .row {
-  flex: 33%;
+  flex:33%;
   display: flex;
   flex-direction: row;
   margin: 5px;
 }
 
 .letter {
-  flex: 33%;
-  height: 100%;
+  flex: 1;
+  height: 50px;
   border: 1px solid grey;
-  margin: 5px;
+  margin: 4px;
   display: grid;
   place-items: center;
   font-size: 30px;
   font-weight: bolder;
   color: white;
+  border-radius: 5px;
   
 }
 .letter.light {
@@ -140,12 +142,13 @@ body.dark-mode {
 
 .keyboard {
   width: 700px;
-  height: 300px;
-  margin-top: 60px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .line1 {
-  flex: 33%;
+  flex:1;
   display: flex;
   flex-direction: row;
   display: flex;
@@ -153,14 +156,14 @@ body.dark-mode {
   margin: 5px;
 }
 .line2 {
-  flex: 33%;
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 5px;
 }
 .line3 {
-  flex: 33%;
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,7 +172,7 @@ body.dark-mode {
 
 .key {
   width: 50px;
-  height: 70px;
+  height: 60px;
   margin: 5px;
   border-radius: 4px;
   display: grid;
