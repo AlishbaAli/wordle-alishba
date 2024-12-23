@@ -9,6 +9,7 @@ function App() {
   const [board, setBoard] = useState(boardDefault);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [currAttempt, setCurrAttempt] = useState({ attempt: 0, letter: 0 });
+  const correctWord = "RIGHT";
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
     document.body.className = isDarkMode ? "light-mode" : "dark-mode";
@@ -46,6 +47,8 @@ function App() {
             onSelectLetter,
             onDelete,
             onEnter,
+            correctWord,
+            currAttempt,
           }}
         >
           <NavBar />
