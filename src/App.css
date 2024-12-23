@@ -129,15 +129,17 @@ body.dark-mode {
 
 
 #correct {
-  background-color: #528d4e;
+  background-color: #66A060;
 }
 
 #almost {
-  background-color: #b49f39;
+  background-color:  #CEB02C;
+  ;
 }
 
 #error {
-  background-color: #3a393c;
+  background-color:  #939B9F;
+  ;
 }
 
 .keyboard {
